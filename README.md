@@ -3,6 +3,13 @@ Python script created for writing people names on different badges design. Also 
 
 ### Demo
 
+### How do you use it?
+1. Open GitBash.
+2. ```git clone https://github.com/DimaOanaTeodora/Badge-Creator.git```.
+3. Open Command Prompt.
+4. ```python main.py```
+or Open ```main.py with``` from ```Visual Studio Code``` and run there.
+
 ### Specifications:
 :diamond_shape_with_a_dot_inside: Badge dimension: ```1200 x 1800 px```.
 
