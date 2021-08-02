@@ -70,8 +70,8 @@ def photoshop_write(new_doc, full_name):
       new_text_layer.textItem.justification = Justification.Center
       # Potoshop doesn't recognize '\n' character . Use '\r' for next line.
       new_text_layer.textItem.contents = common_name + '\r' + family_name
-      # 48 units * 0.75 (px/unit) => 36 
-      new_text_layer.textItem.position = [DOC_WIDTH / 2 - maximum_length[0] / 36, POSITION_Y] # [OX, OY]
+      # X units * 0.75 (px/unit) => font size measure in pixels
+      new_text_layer.textItem.position = [DOC_WIDTH / 2 - maximum_length[0] / (FONT_SIZE * 0.75), POSITION_Y] # [OX, OY]
       new_text_layer.textItem.size = FONT_SIZE
       new_text_layer.textItem.fauxBold = True
       new_text_layer.textItem.color = TEXT_COLOR
