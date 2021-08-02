@@ -66,7 +66,7 @@ def gui():
     # ------------------------------
     folderPath2 = StringVar()
 
-    label2 = Label(main_window, text="The excel file", background=BACKGROUND_COLOR)
+    label2 = Label(main_window, text="Excel file", background=BACKGROUND_COLOR)
     label2.grid(row = 4, column = 0)
 
     entry2 = Entry(main_window, textvariable = folderPath2, width= 60)
