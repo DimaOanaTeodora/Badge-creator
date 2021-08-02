@@ -1,4 +1,3 @@
-from numpy.core.numeric import full
 import pandas as pd
 import re
 import Script_PS as PS
@@ -7,8 +6,9 @@ import os
 def start(red, green, blue, font_size, badge_path, excel_path, font_path):
       
       df = pd.ExcelFile(os.path.abspath(excel_path)).parse('Sheet1') 
-
-      header = ['CD', 'Alumn', 'Design&PR', 'HR', 'FR', 'Edu', 'Proiecte']
+      
+      # header = ['CD' 'Alumn' 'Design&PR' 'HR' 'FR' 'Edu' 'Proiecte']
+      header = df.columns.values
 
       for i in range (df.shape[1]): # df.shape -> tuple (number of written rows - 1 (without header) , number of written columns)
             names=[]

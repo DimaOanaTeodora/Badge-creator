@@ -29,7 +29,6 @@ def set_const(red, green, blue, font_size, badge_path, font_path):
       SAVE_DIRECTORY = BADGE_PATH[: BADGE_PATH.rindex('\\')] + '\Badgeuri'
 
 def photoshop_open(badge_name):
-      # global BADGE_PATH, DOC_WIDTH, app
       global BADGE_PATH, app
       # Open 
       doc = app.load(BADGE_PATH + '\\' + badge_name +'.jpg')
