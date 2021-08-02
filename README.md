@@ -28,6 +28,16 @@ or open ```main.py``` from ```Visual Studio Code``` and run there.
 
 :diamond_shape_with_a_dot_inside: Photoshop versions supported ```2020```, ```cc2019```, ```cc2018```, ```cc2017```.
 
+:diamond_shape_with_a_dot_inside: If the last name is longer than 11 chars, it will automatically reduce the font size.
+```python
+# Font size depends on family name length
+      if len(family_name) > 10:
+            FONT_SIZE = FONT_SIZE - len(family_name) 
+            font_size_px = ImageFont.truetype(FONT_PATH , FONT_SIZE)
+      else:
+            font_size_px = ImageFont.truetype(FONT_PATH , FONT_SIZE)
+ ```
+
 ### What you can do with this app ?
 :heavy_check_mark: Give a local directory on your PC where you have the unfinished badges.
 
@@ -40,19 +50,40 @@ or open ```main.py``` from ```Visual Studio Code``` and run there.
 :heavy_check_mark: Give the font size (measured in units - same as font size set in Photoshop).
 
 ### You need to modify the code if you want to:
-:hammer_and_wrench: Change position for the names on the badge. 
+:hammer_and_wrench: Change position for the names on the badge or change the dimension of the badge.
+```python
+# Script_PS.py
+[...]
+
+POSITION_Y = 1150 
+DOC_WIDTH = 1200 #pixels
+
+[...]
+
+# X units * 0.75 (px/unit)
+new_text_layer.textItem.position = [DOC_WIDTH / 2 - maximum_length[0] / (FONT_SIZE * 0.75), POSITION_Y] # [OX, OY]
+``` 
+*The formula ```DOC_WIDTH / 2 - maximum_length[0] / (FONT_SIZE * 0.75)``` helps to center positioning relative to the vertical line.*
 
 :hammer_and_wrench: Change names for departments which involves renaming ```.jpg``` files.
 
-:hammer_and_wrench: Disable the Bold and Strong style of the font.  
+*This doesn't need changes in code. The changes will be made just in Excel table and the names of the badges.*
 
-:hammer_and_wrench: Change the dimension of the badge.
+:hammer_and_wrench: Disable the Bold and Strong style of the font.  
+```python
+#Script_PS.py
+[...]
+
+new_text_layer.textItem.antiAliasMethod = AntiAlias(4) # 4 coresponds to Strong property
+[...]
+
+new_text_layer.textItem.fauxBold = True
+```
+
 
 ### Technologies used :woman_technologist:
 
  ```Python v3.8.5```
- 
 
- 
 - ```photoshop_python_api``` for the interaction with the Photoshop application. [Find documentation here](https://photoshop-python-api.readthedocs.io/en/master/)
 - ```Tkinter``` library for GUI. [Find documentation here](https://docs.python.org/3/library/tk.html)
