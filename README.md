@@ -1,6 +1,8 @@
 # Badge Creator :mage_man:
 Python script created for writing people names on different badges design. It was made to be used by [Asociația Studenților la Matematică și Informatică](https://www.asmi.ro/) for Teambuilding badges.
 
+ :pushpin: *You can find the organization's repository (romanian translation of the README.md) [here]().*
+
 <hr>
 <div align="center">
 <img src="https://cdn.icon-icons.com/icons2/112/PNG/512/python_18894.png" width="45" height="45"/>
