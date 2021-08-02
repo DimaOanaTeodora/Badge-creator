@@ -1,5 +1,12 @@
 # Badge Creator :mage_man:
-Python script created for writing people names on different badges design. Also was made to be used by [Asociația Studenților la Matematică și Informatică](https://www.asmi.ro/) for Teambuilding badges.
+Python script created for writing people names on different badges design. It was made to be used by [Asociația Studenților la Matematică și Informatică](https://www.asmi.ro/) for Teambuilding badges.
+
+<hr>
+<div align="center">
+<img src="https://cdn.icon-icons.com/icons2/112/PNG/512/python_18894.png" width="45" height="45"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Photoshop_CC_icon.png/615px-Photoshop_CC_icon.png" width="35" height="35"/>
+</div>
+<hr>
 
 ### Demo
 
@@ -44,6 +51,8 @@ or open ```main.py``` from ```Visual Studio Code``` and run there.
 ### Technologies used :woman_technologist:
 
  ```Python v3.8.5```
+ 
+
  
 - ```photoshop_python_api``` for the interaction with the Photoshop application. [Find documentation here](https://photoshop-python-api.readthedocs.io/en/master/)
 - ```Tkinter``` library for GUI. [Find documentation here](https://docs.python.org/3/library/tk.html)
