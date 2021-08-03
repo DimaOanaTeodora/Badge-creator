@@ -14,7 +14,7 @@ Python script created for writing people names on different badges design. It wa
 
 ### How do you use it?
 #### :point_right: If you don't want any changes in code:
-Download ```installer-script-badgeuri-v2021.exe``` and install the app.
+Download the app from [here](https://drive.google.com/file/d/1PwOnTRxc3zL8r5x1demFrciHTgW7Hcuu/view?usp=sharing). Install the app. Open the ```main.exe``` file.
 #### :point_right: If you want to make changes in code:
 ```git clone https://github.com/DimaOanaTeodora/Badge-Creator.git``` command from GitBash.
 
