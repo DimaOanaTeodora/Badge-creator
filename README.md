@@ -13,11 +13,10 @@ Python script created for writing people names on different badges design. It wa
 ### Demo
 
 ### How do you use it?
-1. Open GitBash.
-2. ```git clone https://github.com/DimaOanaTeodora/Badge-Creator.git```.
-3. Open Command Prompt.
-4. ```python main.py```
-or open ```main.py``` from ```Visual Studio Code``` and run there.
+#### :point_right: If you don't want any changes in code:
+Download ```installer-script-badgeuri-v2021.exe``` and install the app.
+#### :point_right: If you want to make changes in code:
+```git clone https://github.com/DimaOanaTeodora/Badge-Creator.git``` command from GitBash.
 
 ### Specifications:
 :diamond_shape_with_a_dot_inside: Badge dimension: ```1200 x 1800 px```.
@@ -45,7 +44,7 @@ or open ```main.py``` from ```Visual Studio Code``` and run there.
 
 :heavy_check_mark: Give the local Excel table with your departments and the names of the people.
 
-:heavy_check_mark: Give the font you want to use (.ttf file).
+:heavy_check_mark: Give the font you want to use (```.ttf``` file).
 
 :heavy_check_mark: Give the color of the text (RGB value).
 
@@ -81,11 +80,13 @@ new_text_layer.textItem.antiAliasMethod = AntiAlias(4) # 4 coresponds to Strong 
 
 new_text_layer.textItem.fauxBold = True
 ```
-
+#### :radioactive: If you want to change the code and generate a new executable file and a new installer then watch this [tutorial](https://www.youtube.com/watch?v=UZX5kH72Yx4&pp=sAQA) :radioactive:
 
 ### Technologies used :woman_technologist:
 
  ```Python v3.8.5```
 
-- ```photoshop_python_api``` for the interaction with the Photoshop application. [Find documentation here](https://photoshop-python-api.readthedocs.io/en/master/)
-- ```Tkinter``` library for GUI. [Find documentation here](https://docs.python.org/3/library/tk.html)
+- ```photoshop_python_api``` for the interaction with the Photoshop application. [Find documentation here](https://photoshop-python-api.readthedocs.io/en/master/).
+- ```Tkinter``` library for GUI. [Find documentation here](https://docs.python.org/3/library/tk.html).
+- ```pyinstaller``` library for generating the ```.exe``` file.
+- ```NSIS``` app for generating the installer for the app.
