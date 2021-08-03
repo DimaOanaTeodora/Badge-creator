@@ -3,9 +3,14 @@ from PIL import Image, ImageTk
 from tkinter import filedialog
 import os
 import Script_Badge
+import sys
 
 # Constants
-DIRNAME = os.path.dirname(__file__)
+if getattr(sys, 'frozen', False):
+        DIRNAME = os.path.dirname(sys.executable) # if you want to generate a .exe file
+elif __file__:
+        DIRNAME = os.path.dirname(__file__)
+
 WIDTH= 680
 HEIGH= 330
 BACKGROUND_COLOR= '#96DED1'

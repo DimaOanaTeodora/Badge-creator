@@ -9,10 +9,8 @@ def start(red, green, blue, font_size, badge_path, excel_path, font_path):
       
       # header = ['CD' 'Alumn' 'Design&PR' 'HR' 'FR' 'Edu' 'Proiecte']
       header = df.columns.values
-      header = ['CD']
 
-      #for i in range (df.shape[1]): # df.shape -> tuple (number of written rows - 1 (without header) , number of written columns)
-      for i in range(1):
+      for i in range (df.shape[1]): # df.shape -> tuple (number of written rows - 1 (without header) , number of written columns)
             names=[]
             names.append(str(df[header[i]]))
             names = names[0].split('\n')
