@@ -15,13 +15,10 @@ Python script created for writing people names on different badges design. It wa
 <img src="https://user-images.githubusercontent.com/61749814/132041715-9009c6ad-cc3f-4005-805f-f220c0b1530d.gif" width="550" height="300"/>
 
 ### How do you use it?
-#### :point_right: If you don't want any changes in code:
-Download the installer from [here](https://drive.google.com/file/d/1PwOnTRxc3zL8r5x1demFrciHTgW7Hcuu/view?usp=sharing). Install the app. Open the ```main.exe``` file.
-#### :point_right: If you want to make changes in code:
 ```git clone https://github.com/DimaOanaTeodora/Badge-Creator.git``` command from GitBash.
 
 ### Specifications:
-:diamond_shape_with_a_dot_inside: Badge dimension: ```1200 x 1800 px```.
+:diamond_shape_with_a_dot_inside: Badge dimension: ```750 x 1181 px```.
 
 :diamond_shape_with_a_dot_inside: Badge format ```.jpg```.
 
@@ -82,7 +79,6 @@ new_text_layer.textItem.antiAliasMethod = AntiAlias(4) # 4 coresponds to Strong 
 
 new_text_layer.textItem.fauxBold = True
 ```
-#### :radioactive: If you want to change the code and generate a new executable file and a new installer then watch this [tutorial](https://www.youtube.com/watch?v=UZX5kH72Yx4&pp=sAQA) :radioactive:
 
 ### Technologies used :woman_technologist:
 
@@ -90,5 +86,4 @@ new_text_layer.textItem.fauxBold = True
 
 - ```photoshop_python_api``` for the interaction with the Photoshop application. [Find documentation here](https://photoshop-python-api.readthedocs.io/en/master/).
 - ```Tkinter``` library for GUI. [Find documentation here](https://docs.python.org/3/library/tk.html).
-- ```pyinstaller``` library for generating the ```.exe``` file.
-- ```NSIS``` app for generating the installer for the app.
+
