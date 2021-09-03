@@ -11,8 +11,8 @@ TEXT_COLOR = ps.SolidColor()
 BADGE_PATH = NaN 
 FONT_PATH = NaN
 FONT_SIZE = NaN
-POSITION_Y = 1150 
-DOC_WIDTH = 1200
+POSITION_Y = 750
+DOC_WIDTH = 827
 SAVE_DIRECTORY =NaN
 
 app = ps.Application()
@@ -31,7 +31,7 @@ def set_const(red, green, blue, font_size, badge_path, font_path):
 def photoshop_open(badge_name):
       global BADGE_PATH, app
       # Open 
-      doc = app.load(BADGE_PATH + '\\' + badge_name +'.jpg')
+      doc = app.load(BADGE_PATH + '\\' + badge_name +'.png')
       # DOC_WIDTH = doc.width 
       new_doc = doc.artLayers.add()
       return new_doc, doc
@@ -39,6 +39,7 @@ def photoshop_open(badge_name):
 def photoshop_write(new_doc, full_name):
       global FONT_SIZE, TEXT_COLOR, POSITION_Y, FONT_PATH, DOC_WIDTH
       # Adjust splitting of lines if name is longer than 10 chars
+      print(full_name)
       if len(full_name) > 10:
             common_name, family_name = full_name.split(" ")[0], full_name.split(" ")[1]
       else:
@@ -76,10 +77,14 @@ def photoshop_write(new_doc, full_name):
       new_text_layer.textItem.fauxBold = True
       new_text_layer.textItem.color = TEXT_COLOR
 
+number = 0
 def photoshop_save(full_name, doc):
+      global number
       # Save document
-      options = ps.JPEGSaveOptions(quality=5)
-      document_name = full_name + '.jpg'
+      #options = ps.JPEGSaveOptions(quality=5)
+      options = ps.PNGSaveOptions()
+      document_name = str(number) + ' ' + full_name + '.png'
+      number = number + 1
       
       Path(SAVE_DIRECTORY).mkdir(parents=True, exist_ok=True)
       doc.saveAs(SAVE_DIRECTORY+ '/' + document_name, options, asCopy=True)
