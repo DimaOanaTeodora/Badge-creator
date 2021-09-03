@@ -12,7 +12,7 @@ Python script created for writing people names on different badges design. It wa
 
 ### Demo
 
-[!Demo](https://user-images.githubusercontent.com/61749814/132041057-3569dd99-429c-42fd-a347-f9186d444366.mp4)
+<img src="https://user-images.githubusercontent.com/61749814/132041715-9009c6ad-cc3f-4005-805f-f220c0b1530d.gif" width="550" height="300"/>
 
 ### How do you use it?
 #### :point_right: If you don't want any changes in code:
