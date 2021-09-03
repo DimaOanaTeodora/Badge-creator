@@ -56,8 +56,8 @@ Download the installer from [here](https://drive.google.com/file/d/1PwOnTRxc3zL8
 # Script_PS.py
 [...]
 
-POSITION_Y = 1150 
-DOC_WIDTH = 1200 #pixels
+POSITION_Y = 750
+DOC_WIDTH = 827 #pixels
 
 [...]
 
